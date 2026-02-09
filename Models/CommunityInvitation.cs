@@ -2,13 +2,13 @@
 {
     public class CommunityInvitation
     {
-        public long Id { get; set; }
-        public long CommunityId { get; set; }
+        public long Id { get; }
+        public long CommunityId { get; }
 
-        public long InviterId { get; set; }
-        public long? InviteeId { get; set; }
+        public long InviterId { get; }
+        public long? InviteeId { get; }
 
-        public string Token { get; set; }
+        public string Token { get; }
 
         public string Status { get; set; }
 

@@ -2,9 +2,9 @@
 {
     public class PostLike
     {
-        public long Id { get; set; }
-        public long PostId { get; set; }
-        public long UserId { get; set; }
+        public long Id { get; }
+        public long PostId { get; }
+        public long UserId { get; }
 
         public DateTime? CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }

@@ -4,6 +4,6 @@
         xmlns:views="clr-namespace:MiniYou_App.Views"
         Title="MiniYou" Height="450" Width="800">
     <Grid>
-        <views:MakePostView/>
+        <views:UserView/>
     </Grid>
 </Window>

@@ -4,8 +4,8 @@ namespace Miniyou.Models
 {
     public class Community
     {
-        public long Id { get; set; }
-        public long OwnerId { get; set; }
+        public long Id { get; }
+        public long OwnerId { get; }
 
         public string Name { get; set; }
         public string Slug { get; set; }

@@ -2,9 +2,9 @@
 {
     public class PersonalAccessToken
     {
-        public long Id { get; set; }
-        public string TokenableType { get; set; }
-        public long TokenableId { get; set; }
+        public long Id { get; }
+        public string TokenableType { get; }
+        public long TokenableId { get; }
 
         public string Name { get; set; }
         public string Token { get; set; }

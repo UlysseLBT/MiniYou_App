@@ -2,10 +2,10 @@
 {
     public class CommunityJoinRequest
     {
-        public long Id { get; set; }
+        public long Id { get; }
 
-        public long CommunityId { get; set; }
-        public long UserId { get; set; }
+        public long CommunityId { get; }
+        public long UserId { get; }
 
         public string Status { get; set; }
 

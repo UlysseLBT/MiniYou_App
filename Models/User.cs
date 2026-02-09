@@ -2,8 +2,8 @@
 {
     public class User
     {
-        public long Id { get; set; }
-        public string Name { get; set; }
+        public long Id { get; }
+        public string Name { get; }
         public string? Username { get; set; }
         public string Email { get; set; }
         public DateTime? EmailVerifiedAt { get; set; }

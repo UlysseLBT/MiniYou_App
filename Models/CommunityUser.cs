@@ -2,10 +2,10 @@
 {
     public class CommunityUser
     {
-        public long Id { get; set; }
-        public long CommunityId { get; set; }
-        public long UserId { get; set; }
-        public string Role { get; set; }
+        public long Id { get; }
+        public long CommunityId { get; }
+        public long UserId { get; }
+        public string Role { get; }
         public DateTime? CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
         public Community? Community { get; set; }

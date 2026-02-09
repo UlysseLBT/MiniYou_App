@@ -2,9 +2,9 @@
 {
     public class Post
     {
-        public long Id { get; set; }
-        public long UserId { get; set; }
-        public long? CommunityId { get; set; }
+        public long Id { get; }
+        public long UserId { get; }
+        public long? CommunityId { get; }
         public string Titre { get; set; }
         public string? Texte { get; set; }
         public string? Url { get; set; }

@@ -3,16 +3,16 @@
     public class Comment
     {
 
-        public long Id { get; set; }
-        public long PostId { get; set; }
-        public long UserId { get; set; }
-        public string Body { get; set; }
+        public long Id { get; }
+        public long PostId { get; }
+        public long UserId { get; }
+        public string Body { get; }
 
         public DateTime? CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
 
-        public Post? Post { get; set; }
-        public User? User { get; set; }
+        public Post? Post { get; }
+        public User? User { get; }
         public Comment()
         {
             Body = string.Empty;
