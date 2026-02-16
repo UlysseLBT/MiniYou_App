@@ -9,4 +9,7 @@
     <RootNamespace>MiniYou_App</RootNamespace>
     <AssemblyName>MiniYou_App</AssemblyName>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Net.Http.Json" Version="10.0.3" />
+  </ItemGroup>
 </Project>

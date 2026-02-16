@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace MiniYou_App.ViewModels
+namespace MiniYou_App.Command
 {
     public class RelayCommand : ICommand
     {

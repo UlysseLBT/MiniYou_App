@@ -7,6 +7,7 @@ namespace MiniYou_App
     {
         public MainWindow()
         {
+            DataContext = new UserListingViewModel();
             InitializeComponent();
         }
     }
