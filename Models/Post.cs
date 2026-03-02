@@ -1,12 +1,20 @@
-﻿namespace Miniyou.Models
+﻿using System.Text.Json.Serialization;
+
+namespace Miniyou.Models
 {
     public class Post
     {
-        public long Id { get; set; }
-        public long UserId { get; set; }
-        public long? CommunityId { get; set; }
+        [JsonPropertyName("id")]
+        public int Id { get; set; }
+        [JsonPropertyName("user_id")]
+        public int UserId { get; set; }
+        [JsonPropertyName("community_id")]
+        public int? CommunityId { get; set; }
+        [JsonPropertyName("titre")]
         public string Titre { get; set; }
+        [JsonPropertyName("texte")]
         public string? Texte { get; set; }
+        [JsonPropertyName("url")]
         public string? Url { get; set; }
 
         public DateTime? CreatedAt { get; set; }
@@ -23,9 +31,9 @@
         }
 
         public Post(
-            long id,
-            long userId,
-            long? communityId,
+            int id,
+            int userId,
+            int communityId,
             string titre,
             string? texte,
             string? url,
@@ -33,9 +41,9 @@
             DateTime? updatedAt
         )
         {
-            Id = id;
-            UserId = userId;
-            CommunityId = communityId;
+            Id = (int)id;
+            UserId = (int)userId;
+            CommunityId = (int?)communityId;
             Titre = titre;
             Texte = texte;
             Url = url;
