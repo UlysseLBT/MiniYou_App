@@ -1,19 +1,34 @@
-﻿namespace Miniyou.Models
+﻿using System.Text.Json.Serialization;
+
+namespace Miniyou.Models
 {
     public class User
     {
-        public long Id { get; set; }
+        [JsonPropertyName("id")]
+        public int Id { get; set; }
+        [JsonPropertyName("name")]
         public string Name { get; set; }
+        [JsonPropertyName("username")]
         public string? Username { get; set; }
+        [JsonPropertyName("email")]
         public string Email { get; set; }
+        [JsonPropertyName("email_verified_at")]
         public DateTime? EmailVerifiedAt { get; set; }
+        [JsonPropertyName("password")]
         public string Password { get; set; }
+        [JsonPropertyName("display_name")]
         public string? DisplayName { get; set; }
+        [JsonPropertyName("avatar_path")]
         public string? AvatarPath { get; set; }
+        [JsonPropertyName("bio")]
         public string? Bio { get; set; }
+        [JsonPropertyName("website")]
         public string? Website { get; set; }
+        [JsonPropertyName("twitter")]
         public string? Twitter { get; set; }
+        [JsonPropertyName("instagram")]
         public string? Instagram { get; set; }
+        [JsonPropertyName("remember_token")]
         public string? RememberToken { get; set; }
         public DateTime? CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
@@ -27,7 +42,7 @@
 
 
         public User(
-            long id,
+            int id,
             string name,
             string? username,
             string email,
@@ -44,7 +59,7 @@
             DateTime? updatedAt
         )
         {
-            Id = id;
+            Id = (int)id;
             Name = name;
             Username = username;
             Email = email;

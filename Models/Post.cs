@@ -6,10 +6,6 @@ namespace Miniyou.Models
     {
         [JsonPropertyName("id")]
         public int Id { get; set; }
-        [JsonPropertyName("user_id")]
-        public int UserId { get; set; }
-        [JsonPropertyName("community_id")]
-        public int? CommunityId { get; set; }
         [JsonPropertyName("titre")]
         public string Titre { get; set; }
         [JsonPropertyName("texte")]
@@ -32,8 +28,6 @@ namespace Miniyou.Models
 
         public Post(
             int id,
-            int userId,
-            int communityId,
             string titre,
             string? texte,
             string? url,
@@ -42,8 +36,6 @@ namespace Miniyou.Models
         )
         {
             Id = (int)id;
-            UserId = (int)userId;
-            CommunityId = (int?)communityId;
             Titre = titre;
             Texte = texte;
             Url = url;

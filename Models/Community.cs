@@ -1,18 +1,21 @@
 ﻿using System;
+using System.Text.Json.Serialization;
 
 namespace Miniyou.Models
 {
     public class Community
     {
-        public long Id { get; }
-        public long OwnerId { get; }
-
+        [JsonPropertyName("id")]
+        public int Id { get; }
+        [JsonPropertyName("name")]
         public string Name { get; set; }
+        [JsonPropertyName("slug")]
         public string Slug { get; set; }
+        [JsonPropertyName("description")]
         public string? Description { get; set; }
-
+        [JsonPropertyName("is_private")]
         public bool IsPrivate { get; set; }
-
+        [JsonPropertyName("visibility")]
         public string Visibility { get; set; }
 
         public DateTime? CreatedAt { get; set; }
@@ -29,8 +32,7 @@ namespace Miniyou.Models
         }
 
         public Community(
-            long id,
-            long ownerId,
+            int id,
             string name,
             string slug,
             string? description,
@@ -40,8 +42,7 @@ namespace Miniyou.Models
             DateTime? updatedAt
         )
         {
-            Id = id;
-            OwnerId = ownerId;
+            Id = (int)id;
             Name = name;
             Slug = slug;
             Description = description;
